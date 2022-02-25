@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Hello"
+			"path" : "cpp_learning"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "Hello::@6890427a1f51a3e7e1df",
+	"id" : "cpp_learning::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Hello",
-	"nameOnDisk" : "Hello",
+	"name" : "cpp_learning",
+	"nameOnDisk" : "cpp_learning",
 	"paths" : 
 	{
 		"build" : ".",

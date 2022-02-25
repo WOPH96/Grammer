@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used
-BuildDirectory: /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build
+SourceDirectory: /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used
+BuildDirectory: /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.22.2/bin/cmake" "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used"
+ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.22.2/bin/cmake" "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used"
 MakeCommand: /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

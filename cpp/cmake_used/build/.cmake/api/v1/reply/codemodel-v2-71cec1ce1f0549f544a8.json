@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "Hello",
+					"name" : "cpp_learning",
 					"targetIndexes" : 
 					[
 						0,
@@ -220,13 +220,6 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "Hello::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Hello-Debug-3469a587f3b054eed147.json",
-					"name" : "Hello",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "Nightly::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Nightly-Debug-68b9166cd472a74ae8c4.json",
 					"name" : "Nightly",
@@ -294,6 +287,13 @@
 					"jsonFile" : "target-NightlyUpdate-Debug-626610a39e73c860e563.json",
 					"name" : "NightlyUpdate",
 					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_learning::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_learning-Debug-0fc998cf177ee4cdc309.json",
+					"name" : "cpp_learning",
+					"projectIndex" : 0
 				}
 			]
 		}
@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build",
-		"source" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used"
+		"build" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build",
+		"source" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used"
 	},
 	"version" : 
 	{

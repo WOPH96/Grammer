@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build
 
 # Utility rule file for ContinuousUpdate.
 
@@ -82,6 +82,6 @@ CMakeFiles/ContinuousUpdate.dir/clean:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/clean
 
 CMakeFiles/ContinuousUpdate.dir/depend:
-	cd /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build /Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build /Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousUpdate.dir/depend
 

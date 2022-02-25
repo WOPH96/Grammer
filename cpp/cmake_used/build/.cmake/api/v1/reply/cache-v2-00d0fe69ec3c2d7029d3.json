@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build"
+			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used"
+			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Hello"
+			"value" : "cpp_learning"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1662,42 +1662,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "Hello_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used/build"
-		},
-		{
-			"name" : "Hello_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Hello_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/yang-wonphil/Desktop/study/programmers/cpp/cmake_used"
-		},
-		{
 			"name" : "MAKECOMMAND",
 			"properties" : 
 			[
@@ -1792,6 +1756,42 @@
 			],
 			"type" : "UNINITIALIZED",
 			"value" : ""
+		},
+		{
+			"name" : "cpp_learning_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used/build"
+		},
+		{
+			"name" : "cpp_learning_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "cpp_learning_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/cmake_used"
 		}
 	],
 	"kind" : "cache",
