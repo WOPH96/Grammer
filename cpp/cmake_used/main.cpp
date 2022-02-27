@@ -26,6 +26,8 @@ public:
     MyString &insert(int loc, const MyString &str);
     MyString &insert(int loc, const char *str);
     MyString &insert(int loc, char c);
+
+    MyString &erase(int loc, int num);
 };
 
 MyString::MyString(char c)
@@ -87,6 +89,8 @@ void MyString::reserve(int size)
 {
     if (size > memory_capacity)
     {
+        if (size < memory_capacity * 2)
+            size = memory_capacity * 2;
         char *prev_string_content = string_content;
 
         string_content = new char[size];
@@ -101,7 +105,10 @@ void MyString::reserve(int size)
 
 void MyString::print() const
 {
-    std::cout << string_content << std::endl;
+    for (int i = 0; i < string_length; i++)
+        std::cout << string_content[i];
+
+    std::cout << "\n";
 }
 
 MyString &MyString::assign(const MyString &str)
@@ -180,7 +187,8 @@ MyString &MyString::insert(int loc, const MyString &str)
         loc = this->string_length;
 
     //공간 재설정
-    reserve(this->string_length + str.string_length);
+    string_length += str.string_length;
+    reserve(string_length);
     // std::cout << this->memory_capacity;
 
     //삽입
@@ -221,6 +229,34 @@ MyString &MyString::insert(int loc, char c)
     return this->insert(loc, temp);
 }
 
+MyString &MyString::erase(int loc, int num)
+{
+    //  a b c d e
+    // 0 1 2 3 4 5
+    // 0,3 ==>de = 0,1 = 3,4
+    // 1,1 ==>acde = 1,2,3 = 2,3,4
+    // 3,1 ==>abce = 3 = 4
+
+    if (loc < 0 || loc >= string_length)
+    {
+        return *this;
+    }
+
+    else if (loc + num > string_length)
+    {
+        return *this;
+    }
+
+    for (int idx = loc; idx < loc + num; idx++)
+    {
+        std::cout << idx << std::endl;
+        string_content[idx] = string_content[idx + num];
+    }
+    string_length -= num;
+
+    return *this;
+}
+
 int main()
 {
 
@@ -229,16 +265,26 @@ int main()
     // origin.insert(3, inserted);
     // origin.print();
 
-    MyString str1("very long string");
-    MyString str2("<some string inserted between>");
-    str1.reserve(30);
+    // MyString str1("very long string");
+    // MyString str2("<some string inserted between>");
+    // str1.reserve(30);
 
-    std::cout << "Capacity : " << str1.capacity() << std::endl;
-    std::cout << "String length : " << str1.length() << std::endl;
-    str1.print();
+    // std::cout << "Capacity : " << str1.capacity() << std::endl;
+    // std::cout << "String length : " << str1.length() << std::endl;
+    // str1.print();
 
-    str1.insert(5, str2);
-    str1.print();
+    // str1.insert(5, str2);
+    // str1.print();
+    // std::cout << "Capacity : " << str1.capacity() << std::endl;
+    // std::cout << "String length : " << str1.length() << std::endl;
 
+    MyString origin("qwertyuiop");
+    // MyString inserted("qwer");
+    // origin.insert(3, inserted);
+    origin.print();
+    std::cout << "String length : " << origin.length() << std::endl;
+    origin.erase(4, 3);
+    origin.print();
+    std::cout << "String length : " << origin.length() << std::endl;
     return 0;
 }
