@@ -19,6 +19,9 @@ public:
     void reserve(int size);
     void print() const;
 
+    // MyString을 반환하여 다시 클래스 내 객체가 된다..!!
+    // ==> 클래스 함수들을 사용 가능하게 한다
+    // a.insert(b).length() 등...
     MyString &assign(const MyString &str);
     MyString &assign(const char *str);
     char at(int i) const;
@@ -28,6 +31,11 @@ public:
     MyString &insert(int loc, char c);
 
     MyString &erase(int loc, int num);
+
+    int find(int find_from, const MyString &str) const;
+    int find(int find_from, const char *str) const;
+    int find(int find_from, char c) const;
+    MyString &compare(const MyString &str) const;
 };
 
 MyString::MyString(char c)
@@ -151,6 +159,8 @@ char MyString::at(int i) const
 
 MyString &MyString::insert(int loc, const MyString &str)
 {
+
+    /* 굳이 나누지 않고 다시 짜보기!! */
     //선제조건
     //  a b c  ==> 기존 string이라 가정하면
     // 0 1 2 3  ==> 자리에만 놓일 수 있음.
@@ -283,7 +293,7 @@ int main()
     // origin.insert(3, inserted);
     origin.print();
     std::cout << "String length : " << origin.length() << std::endl;
-    origin.erase(4, 3);
+    origin.erase(4, 30);
     origin.print();
     std::cout << "String length : " << origin.length() << std::endl;
     return 0;
