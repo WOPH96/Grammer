@@ -19,7 +19,6 @@ public:
     void reserve(int size);
     void print() const;
 
-    void reassign_memory(const MyString &str);
     MyString &assign(const MyString &str);
     MyString &assign(const char *str);
     char at(int i) const;
@@ -105,29 +104,17 @@ void MyString::print() const
     std::cout << string_content << std::endl;
 }
 
-void MyString::reassign_memory(const MyString &str)
-{
-
-    delete[] string_content; // assign 할꺼니까, 기존 값은 필요없음
-
-    string_length = str.string_length; // private 함수는 같은 class만 접근가능
-    memory_capacity = string_length;
-
-    string_content = new char[memory_capacity];
-}
-
 MyString &MyString::assign(const MyString &str)
 {
     if (str.string_length > memory_capacity) // 재할당 해주기
     {
-        reassign_memory(str);
-        std::cout << "hi";
-        // delete[] string_content; // assign 할꺼니까, 기존 값은 필요없음
 
-        // this->string_length = str.string_length; // private 함수는 같은 class만 접근가능
-        // this->memory_capacity = this->string_length;
+        delete[] string_content; // assign 할꺼니까, 기존 값은 필요없음
 
-        // string_content = new char[this->memory_capacity];
+        this->string_length = str.string_length; // private 함수는 같은 class만 접근가능
+        this->memory_capacity = this->string_length;
+
+        string_content = new char[this->memory_capacity];
     }
 
     strcpy(string_content, str.string_content);
@@ -168,12 +155,12 @@ MyString &MyString::insert(int loc, const MyString &str)
 
     //삽입
     // 0위치 삽입시
-    // str_content 위치 저장 => char *temp = str_content
+    // str_content 위치 저장 => char *temp = this->content
     // this->content = str.content
     // this->content[str.length+ i] = temp[i] for i in range(this->length)
 
     // this->length 위치 삽입시
-    // this->content = str.content
+
     // this->content[this->length+ i] = str_content[i] for i in range(str.length)
 
     // 사이 삽입시 (e.g 1위치)
@@ -193,13 +180,32 @@ MyString &MyString::insert(int loc, const MyString &str)
         loc = this->string_length;
 
     //공간 재설정
-    if (this->string_length + str.string_length > this->memory_capacity)
-        reassign_memory(str);
+    reserve(this->string_length + str.string_length);
+    // std::cout << this->memory_capacity;
 
     //삽입
     if (loc == 0)
     {
-        char *temp = str.string_content;
+        MyString temp(this->string_content);
+
+        strcpy(this->string_content, str.string_content);
+        for (int i = 0; i < this->string_length; i++)
+            this->string_content[str.string_length + i] = temp.string_content[i];
+    }
+
+    else if (loc == this->string_length)
+    {
+        for (int i = 0; i < str.string_length; i++)
+            this->string_content[this->string_length + i] = str.string_content[i];
+    }
+
+    else
+    {
+        MyString back(&(this->string_content[loc]));
+        for (int i = 0; i < str.string_length; i++)
+            this->string_content[loc + i] = str.string_content[i];
+        for (int i = 0; i < back.string_length; i++)
+            this->string_content[loc + str.string_length + i] = back.string_content[i];
     }
 
     return *this;
@@ -218,22 +224,21 @@ MyString &MyString::insert(int loc, char c)
 int main()
 {
 
-    // MyString str1("very long string");
-    // MyString str2("<some string inserted between>");
-    // str1.reserve(30);
+    // MyString origin("abc");
+    // MyString inserted("qwer");
+    // origin.insert(3, inserted);
+    // origin.print();
 
-    // std::cout << "Capacity : " << str1.capacity() << std::endl;
-    // std::cout << "String length : " << str1.length() << std::endl;
-    // str1.print();
+    MyString str1("very long string");
+    MyString str2("<some string inserted between>");
+    str1.reserve(30);
 
-    // str1.assign(str2);
-    // std::cout << "Capacity2 : " << str1.capacity() << std::endl;
-    // std::cout << "String length2 : " << str1.length() << std::endl;
-    // str1.print();
+    std::cout << "Capacity : " << str1.capacity() << std::endl;
+    std::cout << "String length : " << str1.length() << std::endl;
+    str1.print();
 
-    MyString origin("abc");
-    MyString inserted("qwer");
-    origin.insert(2, inserted);
+    str1.insert(5, str2);
+    str1.print();
 
     return 0;
 }
