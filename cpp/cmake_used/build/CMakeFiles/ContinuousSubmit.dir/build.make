@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used
+CMAKE_SOURCE_DIR = /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build
+CMAKE_BINARY_DIR = /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build
 
 # Utility rule file for ContinuousSubmit.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 CMakeFiles/ContinuousSubmit.dir/depend:
-	cd /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousSubmit.dir/depend
 

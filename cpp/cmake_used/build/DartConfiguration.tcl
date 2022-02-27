@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used
-BuildDirectory: /mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used/build
+SourceDirectory: /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used
+BuildDirectory: /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: DESKTOP-JF08IT6
+Site: DESKTOP-F9CV2UM
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-x86_64-linux-gnu-g++-7
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -36,7 +36,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/mnt/c/Users/ywonp/Documents/study/grammer/cpp/cmake_used"
+ConfigureCommand: "/usr/bin/cmake" "/mnt/c/Users/ywonp/Desktop/study/grammer/cpp/cmake_used"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -72,7 +72,7 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/x86_64-linux-gnu-g++-7
+Compiler: /usr/bin/c++
 CompilerVersion: 7.5.0
 
 # Dynamic analysis (MemCheck)
