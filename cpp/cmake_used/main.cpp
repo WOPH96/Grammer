@@ -295,37 +295,38 @@ int MyString::compare(const MyString &str) const
 }
 int main()
 {
+    /*
+        // MyString origin("abc");
+        // MyString inserted("qwer");
+        // origin.insert(3, inserted);
+        // origin.print();
 
-    // MyString origin("abc");
-    // MyString inserted("qwer");
-    // origin.insert(3, inserted);
-    // origin.print();
+        // MyString str1("very long string");
+        // MyString str2("<some string inserted between>");
+        // str1.reserve(30);
 
-    // MyString str1("very long string");
-    // MyString str2("<some string inserted between>");
-    // str1.reserve(30);
+        // std::cout << "Capacity : " << str1.capacity() << std::endl;
+        // std::cout << "String length : " << str1.length() << std::endl;
+        // str1.print();
 
-    // std::cout << "Capacity : " << str1.capacity() << std::endl;
-    // std::cout << "String length : " << str1.length() << std::endl;
-    // str1.print();
+        // str1.insert(5, str2);
+        // str1.print();
+        // std::cout << "Capacity : " << str1.capacity() << std::endl;
+        // std::cout << "String length : " << str1.length() << std::endl;
 
-    // str1.insert(5, str2);
-    // str1.print();
-    // std::cout << "Capacity : " << str1.capacity() << std::endl;
-    // std::cout << "String length : " << str1.length() << std::endl;
+        // MyString origin("qwertyuiop");
+        // // MyString inserted("qwer");
+        // // origin.insert(3, inserted);
+        // // origin.print();
+        // // std::cout << "String length : " << origin.length() << std::endl;
+        // // origin.erase(4, 30);
+        // // origin.print();
+        // // std::cout << "String length : " << origin.length() << std::endl;
 
-    MyString origin("qwertyuiop");
-    // MyString inserted("qwer");
-    // origin.insert(3, inserted);
-    // origin.print();
-    // std::cout << "String length : " << origin.length() << std::endl;
-    // origin.erase(4, 30);
-    // origin.print();
-    // std::cout << "String length : " << origin.length() << std::endl;
+        // MyString sub("abcde");
 
-    MyString sub("abcde");
-
-    std::cout << origin.compare(sub) << std::endl;
+        // std::cout << origin.compare(sub) << std::endl;
+        */
 
     return 0;
 }
