@@ -24,6 +24,10 @@
     "string_view": "cpp",
     "system_error": "cpp",
     "type_traits": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "algorithm": "cpp",
+    "__locale": "cpp",
+    "__string": "cpp",
+    "string": "cpp"
   }
 }
