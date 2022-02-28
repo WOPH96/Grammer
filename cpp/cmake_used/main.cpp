@@ -338,7 +338,7 @@ int main()
 
     // 연산자 오버로딩
     MyString A("BBQ");
-    MyString B("BBQ");
+    MyString B("BBQi");
 
     std::cout << (A == B) << std::endl;
     return 0;
