@@ -36,6 +36,8 @@ public:
     int find(int find_from, const char *str) const;
     int find(int find_from, char c) const;
     int compare(const MyString &str) const;
+
+    bool operator==(MyString &str);
 };
 
 MyString::MyString(char c)
@@ -293,6 +295,12 @@ int MyString::compare(const MyString &str) const
 
     return -1;
 }
+
+bool MyString::operator==(MyString &str)
+{
+    return !this->compare(str);
+}
+
 int main()
 {
     /*
@@ -328,5 +336,10 @@ int main()
         // std::cout << origin.compare(sub) << std::endl;
         */
 
+    // 연산자 오버로딩
+    MyString A("BBQ");
+    MyString B("BBQ");
+
+    std::cout << (A == B) << std::endl;
     return 0;
 }
