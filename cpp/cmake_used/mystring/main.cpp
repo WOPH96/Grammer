@@ -35,7 +35,9 @@ public:
     int find(int find_from, const MyString &str) const;
     int find(int find_from, const char *str) const;
     int find(int find_from, char c) const;
-    MyString &compare(const MyString &str) const;
+    int compare(const MyString &str) const;
+
+    bool operator==(MyString &str);
 };
 
 MyString::MyString(char c)
@@ -267,34 +269,77 @@ MyString &MyString::erase(int loc, int num)
     return *this;
 }
 
+int MyString::compare(const MyString &str) const
+{
+    // (*this) - (str) 을 수행해서 그 1, 0, -1 로 그 결과를 리턴한다
+    // 1 은 (*this) 가 사전식으로 더 뒤에 온다는 의미. 0 은 두 문자열
+    // 이 같다는 의미, -1 은 (*this) 가 사전식으로 더 앞에 온다는 의미이다.
+    for (int i = 0; i < std::min(string_length, str.string_length); i++)
+    {
+        if (string_content[i] > str.string_content[i])
+            return 1;
+
+        else if (string_content[i] < str.string_content[i])
+            return -1;
+    }
+
+    // 여기 까지 했는데 끝나지 않았다면 앞 부분 까지 모두 똑같은 것이 된다.
+    // 만일 문자열 길이가 같다면 두 문자열은 아예 같은 문자열이 된다.
+
+    if (string_length == str.string_length)
+        return 0;
+
+    // 참고로 abc 와 abcd 의 크기 비교는 abcd 가 더 뒤에 오게 된다.
+    else if (string_length > str.string_length)
+        return 1;
+
+    return -1;
+}
+
+bool MyString::operator==(MyString &str)
+{
+    return !this->compare(str);
+}
+
 int main()
 {
+    /*
+        // MyString origin("abc");
+        // MyString inserted("qwer");
+        // origin.insert(3, inserted);
+        // origin.print();
 
-    // MyString origin("abc");
-    // MyString inserted("qwer");
-    // origin.insert(3, inserted);
-    // origin.print();
+        // MyString str1("very long string");
+        // MyString str2("<some string inserted between>");
+        // str1.reserve(30);
 
-    // MyString str1("very long string");
-    // MyString str2("<some string inserted between>");
-    // str1.reserve(30);
+        // std::cout << "Capacity : " << str1.capacity() << std::endl;
+        // std::cout << "String length : " << str1.length() << std::endl;
+        // str1.print();
 
-    // std::cout << "Capacity : " << str1.capacity() << std::endl;
-    // std::cout << "String length : " << str1.length() << std::endl;
-    // str1.print();
+        // str1.insert(5, str2);
+        // str1.print();
+        // std::cout << "Capacity : " << str1.capacity() << std::endl;
+        // std::cout << "String length : " << str1.length() << std::endl;
 
-    // str1.insert(5, str2);
-    // str1.print();
-    // std::cout << "Capacity : " << str1.capacity() << std::endl;
-    // std::cout << "String length : " << str1.length() << std::endl;
+        // MyString origin("qwertyuiop");
+        // // MyString inserted("qwer");
+        // // origin.insert(3, inserted);
+        // // origin.print();
+        // // std::cout << "String length : " << origin.length() << std::endl;
+        // // origin.erase(4, 30);
+        // // origin.print();
+        // // std::cout << "String length : " << origin.length() << std::endl;
 
-    MyString origin("qwertyuiop");
-    // MyString inserted("qwer");
-    // origin.insert(3, inserted);
-    origin.print();
-    std::cout << "String length : " << origin.length() << std::endl;
-    origin.erase(4, 30);
-    origin.print();
-    std::cout << "String length : " << origin.length() << std::endl;
+        // MyString sub("abcde");
+
+        // std::cout << origin.compare(sub) << std::endl;
+        */
+
+    // 연산자 오버로딩
+    MyString A("BBQ");
+    MyString B("BBQ");
+
+    std::cout << (A == B) << std::endl;
     return 0;
 }
