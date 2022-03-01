@@ -1,11 +1,6 @@
 #include <iostream>
-#include <string>
-using std::cout;
-using std::endl;
-using std::string;
 
 template <typename T>
-
 class Vector
 {
     T *data;
@@ -13,20 +8,22 @@ class Vector
     int length;
 
 public:
+    // 어떤 타입을 보관하는지
+    typedef T value_type;
+
     // 생성자
     Vector(int n = 1) : data(new T[n]), capacity(n), length(0) {}
 
     // 맨 뒤에 새로운 원소를 추가한다.
-    void push_back(T s)
+    void push_back(int s)
     {
         if (capacity <= length)
         {
-            T *temp = new T[capacity * 2];
+            int *temp = new T[capacity * 2];
             for (int i = 0; i < length; i++)
             {
                 temp[i] = data[i];
             }
-
             delete[] data;
             data = temp;
             capacity *= 2;
@@ -52,6 +49,14 @@ public:
     // 현재 벡터의 크기를 구한다.
     int size() { return length; }
 
+    // i 번째 원소와 j 번째 원소 위치를 바꾼다.
+    void swap(int i, int j)
+    {
+        T temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
+
     ~Vector()
     {
         if (data)
@@ -61,21 +66,43 @@ public:
     }
 };
 
+template <typename Cont>
+void bubble_sort(Cont &cont)
+{
+    for (int i = 0; i < cont.size(); i++)
+    {
+        for (int j = i + 1; j < cont.size(); j++)
+        {
+            if (cont[i] > cont[j])
+            {
+                cont.swap(i, j);
+            }
+        }
+    }
+}
+
 int main()
 {
-
     Vector<int> int_vec;
     int_vec.push_back(3);
+    int_vec.push_back(1);
     int_vec.push_back(2);
+    int_vec.push_back(8);
+    int_vec.push_back(5);
+    int_vec.push_back(3);
 
-    std::cout << "-------- int vector ----------" << std::endl;
-    std::cout << "첫번째 원소 : " << int_vec[0] << std::endl;
-    std::cout << "두번째 원소 : " << int_vec[1] << std::endl;
+    std::cout << "정렬 이전 ---- " << std::endl;
+    for (int i = 0; i < int_vec.size(); i++)
+    {
+        std::cout << int_vec[i] << " ";
+    }
 
-    Vector<string> str_vec;
-    str_vec.push_back("diddnjsvlf");
-
-    cout << str_vec[0] << endl;
-
-    return 0;
+    std::cout << std::endl
+              << "정렬 이후 ---- " << std::endl;
+    bubble_sort(int_vec);
+    for (int i = 0; i < int_vec.size(); i++)
+    {
+        std::cout << int_vec[i] << " ";
+    }
+    std::cout << std::endl;
 }
