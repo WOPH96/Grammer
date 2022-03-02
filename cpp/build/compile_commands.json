@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/Users/yang-wonphil/Desktop/study/grammer/cpp/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -o CMakeFiles/learn.dir/main.cpp.o -c /Users/yang-wonphil/Desktop/study/grammer/cpp/main.cpp",
-  "file": "/Users/yang-wonphil/Desktop/study/grammer/cpp/main.cpp"
+  "directory": "/mnt/c/Users/ywonp/Desktop/study/grammer/cpp/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/learn.dir/main.cpp.o -c /mnt/c/Users/ywonp/Desktop/study/grammer/cpp/main.cpp",
+  "file": "/mnt/c/Users/ywonp/Desktop/study/grammer/cpp/main.cpp"
 }
 ]
