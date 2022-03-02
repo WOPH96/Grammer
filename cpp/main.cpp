@@ -1,16 +1,13 @@
 #include <iostream>
 
-using std::cout;
-using std::endl;
-using std::string;
-
-template <typename T>
-void print(T arg)
+template <typename... Ints>
+int sum_all(Ints... nums)
 {
+    return (... + nums);
 }
 
 int main()
 {
-
-    return 0;
+    // 1 + 4 + 2 + 3 + 10
+    std::cout << sum_all(1, 4, 2, 3, 10) << std::endl;
 }
