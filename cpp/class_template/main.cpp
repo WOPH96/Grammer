@@ -9,13 +9,13 @@ class Vector
 
 public:
     // 어떤 타입을 보관하는지
-    typedef T value_type;
+    typedef T value_type; // just 주석
 
     // 생성자
     Vector(int n = 1) : data(new T[n]), capacity(n), length(0) {}
 
     // 맨 뒤에 새로운 원소를 추가한다.
-    void push_back(int s)
+    void push_back(T s)
     {
         if (capacity <= length)
         {
@@ -104,5 +104,6 @@ int main()
     {
         std::cout << int_vec[i] << " ";
     }
+
     std::cout << std::endl;
 }
