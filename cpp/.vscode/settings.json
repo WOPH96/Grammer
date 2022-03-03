@@ -28,6 +28,7 @@
     "algorithm": "cpp",
     "__locale": "cpp",
     "__string": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "vector": "cpp"
   }
 }
