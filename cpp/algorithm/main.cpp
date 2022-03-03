@@ -14,6 +14,13 @@ void print(Iter begin, Iter end)
     }
     std::cout << std::endl;
 }
+struct is_odd
+{
+    bool operator()(const int &i) { return i % 2 == 1; }
+};
+
+bool odd(const int &i) { return i % 2 == 1; }
+
 int main()
 {
     std::vector<int> vec;
@@ -27,10 +34,8 @@ int main()
     std::cout << "처음 vec 상태 ------" << std::endl;
     print(vec.begin(), vec.end());
 
-    std::cout << "벡터에서 홀수인 원소 제거 ---" << std::endl;
-    vec.erase(std::remove_if(vec.begin(), vec.end(),
-                             [](int i) -> bool
-                             { return i % 2 == 1; }),
-              vec.end());
+    std::cout << "벡터에서 홀수 인 원소 제거 ---" << std::endl;
+    vec.erase(std::remove_if(vec.begin(), vec.end(), is_odd()), vec.end());
+    // vec.erase(std::remove_if(vec.begin(), vec.end(), odd), vec.end());
     print(vec.begin(), vec.end());
 }
