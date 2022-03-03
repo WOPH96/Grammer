@@ -29,6 +29,7 @@
     "__locale": "cpp",
     "__string": "cpp",
     "string": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "list": "cpp"
   }
 }
