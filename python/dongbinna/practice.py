@@ -13,6 +13,6 @@ print(array)
 lst1 = [1, 2, 3, 4, 5]
 lst2 = [6, 7, 8, 9, 10]
 
-result = map(lambda a, b: a+b, lst1, lst2)  # 각각의 원소에 함수를 적용하고싶을 떄 map 사용
+result = map(sum, lst1, lst2)  # 각각의 원소에 함수를 적용하고싶을 떄 map 사용
 
 print(list(result))
