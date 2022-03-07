@@ -1,3 +1,5 @@
+# 데이터 입력
+
 data = input().split()
 print(data)
 # data = int(input().split())
