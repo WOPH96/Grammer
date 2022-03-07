@@ -1,7 +1,5 @@
-# 빠르게 입력받기
+# 응용
 
-import sys
-
-data = sys.stdin.readline().rstrip()
+data = list(map(lambda x: x+1, map(int, input().split())))
 
 print(data)
