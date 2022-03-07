@@ -1,11 +1,7 @@
-# 데이터 입력
+# 빠르게 입력받기
 
-data = input().split()
-print(data)
-# data = int(input().split())
+import sys
 
-data = map(int, input().split())  # 패킹
-print(data)
-data = list(map(int, input().split()))
+data = sys.stdin.readline().rstrip()
 
 print(data)
