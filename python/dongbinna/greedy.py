@@ -2,42 +2,32 @@
 
 # 그리디 알고리즘 --> 문제 풀이를 위한 최소한의 아이디어를 떠올리는것이 중요
 
-# N이 1이 될 때 까지
+# 곱하기 혹은 더하기
+
+# x or + 넣어서 가장 큰 수 만들기
+
+# 0이 오면 덧셈 나머지는 곱셈 ==> 1이 와도 덧셈!
 
 # 내 풀이
 
+def solution(s):
+    answer = int(s[0])
+    flag = False
 
-def solution(n, k):
-    count = 0
+    if answer == 0 or answer == 1:
+        answer += int(s[1])
+        flag = True
 
-    while(n != 1):
-        if(n % k == 0):
-            n //= k
-            count += 1
+    for n in s[1:]:
+        if flag:
+            flag = False
+            continue
+        if n == '0' or n == '1':
+            answer += int(n)
         else:
-            n -= 1
-            count += 1
+            answer *= int(n)
 
-    return count
-
-
-# 동빈나
-
-# 최대한 많이 나누라
-
-def bin_sol(n, k):
-    result = 0
-    while True:
-        target = (n//k) * k  # 1을 빼는 과정을 몇번 하는가
-        result += n-target
-        n = target
-        # N이 K보다 작을 때 탈출
-        if n < k:
-            break
-        n //= k
-        result += 1
-    result += (n-1)
-    return result
+    return answer
 
 
-print(bin_sol(17, 4))
+print(solution('02984'))
