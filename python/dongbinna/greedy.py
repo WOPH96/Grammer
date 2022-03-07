@@ -2,19 +2,42 @@
 
 # 그리디 알고리즘 --> 문제 풀이를 위한 최소한의 아이디어를 떠올리는것이 중요
 
-# 거스름돈
+# N이 1이 될 때 까지
 
-# 큰 단위가 항상 작은 단위의 배수이므로! 작은 단위 동전들을 조합해 다른 해가 나올 수 없다!
-
-
-n = 1260
-count = 0
-
-coins = [500, 100, 50, 10]
-
-for coin in coins:
-    count += n // coin
-    n %= coin
+# 내 풀이
 
 
-print(count)
+def solution(n, k):
+    count = 0
+
+    while(n != 1):
+        if(n % k == 0):
+            n //= k
+            count += 1
+        else:
+            n -= 1
+            count += 1
+
+    return count
+
+
+# 동빈나
+
+# 최대한 많이 나누라
+
+def bin_sol(n, k):
+    result = 0
+    while True:
+        target = (n//k) * k  # 1을 빼는 과정을 몇번 하는가
+        result += n-target
+        n = target
+        # N이 K보다 작을 때 탈출
+        if n < k:
+            break
+        n //= k
+        result += 1
+    result += (n-1)
+    return result
+
+
+print(bin_sol(17, 4))
