@@ -16,19 +16,38 @@
 # 숫자 = 0~9 한 글자를 의미
 # 수 = 100 , 700 , 10000 등 정수 값을 의미
 
-S = str(input())
+# S = str(input())
 
-lst = sorted(S)
+# lst = sorted(S)
 
-sum = 0
-# print(lst)
-# print(ord('0'))
+# sum = 0
+# # print(lst)
+# # print(ord('0'))
 
-while ord(lst[0]) < 65:
-    sum += ord(lst[0])-ord('0')
-    lst.pop(0)
-S = "".join(lst)
-S += str(sum)
+# while ord(lst[0]) < 65:
+#     sum += ord(lst[0])-ord('0')
+#     lst.pop(0)
+# S = "".join(lst)
+# S += str(sum)
 
 
-print(S)
+# print(S)
+
+# 동빈나
+
+data = input()
+result = []
+value = 0
+
+for x in data:
+    if x.isalpha():
+        result.append(x)
+    else:
+        value += int(x)
+
+result.sort()
+
+if value != 0:
+    result.append(str(value))
+
+print(''.join(result))
