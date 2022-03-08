@@ -11,28 +11,24 @@
 
 # 나이트가 갈 수 있는 경우의 수 구하기
 
-# 기본값 a1
+# 문자열 재정렬
 
-# c3 기준 8 개
+# 숫자 = 0~9 한 글자를 의미
+# 수 = 100 , 700 , 10000 등 정수 값을 의미
 
-init = str(input())
+S = str(input())
 
-x, y = ord(init[0])-ord('a'), ord(init[1])-ord('1')
+lst = sorted(S)
 
-dx = [-2, -2, 2, 2, 1, -1, 1, -1]
-dy = [1, -1, 1, -1, -2, -2, 2, 2]
+sum = 0
+# print(lst)
+# print(ord('0'))
 
-cnt = 0
+while ord(lst[0]) < 65:
+    sum += ord(lst[0])-ord('0')
+    lst.pop(0)
+S = "".join(lst)
+S += str(sum)
 
-print(x, y)
 
-for i in range(8):
-    tx = x - dx[i]
-    ty = y - dy[i]
-
-    if(tx < 0 or ty < 0 or tx > 7 or ty > 7):
-        continue
-
-    cnt += 1
-
-print(cnt)
+print(S)
