@@ -2,32 +2,35 @@
 
 # 그리디 알고리즘 --> 문제 풀이를 위한 최소한의 아이디어를 떠올리는것이 중요
 
-# 곱하기 혹은 더하기
+# 모험가 길드
 
-# x or + 넣어서 가장 큰 수 만들기
-
-# 0이 오면 덧셈 나머지는 곱셈 ==> 1이 와도 덧셈!
+# 공포도가 작은사람이 많으면 팀 수 증가 굿 == 오름차순
+# ==> N 이하
 
 # 내 풀이
 
-def solution(s):
-    answer = int(s[0])
-    flag = False
 
-    if answer == 0 or answer == 1:
-        answer += int(s[1])
-        flag = True
+N = int(input())
+scary = list(map(int, input().split()))
 
-    for n in s[1:]:
-        if flag:
-            flag = False
-            continue
-        if n == '0' or n == '1':
-            answer += int(n)
-        else:
-            answer *= int(n)
+# sorted(scary)
+scary.sort()
 
-    return answer
+# fix_idx = 0
+# mv_idx = 0
+# team = 0
 
+# while mv_idx != N:
+#     elem = scary(fix_idx)
 
-print(solution('02984'))
+# 동빈나 풀이
+
+result = 0
+count = 0
+
+for i in scary:  # 낮은 공포도부터 확인
+    count += 1  # 모험가 증가
+    if count >= i:  # 모험가 수 가 현재 공포도 이상이라면 팀 결성
+        result += 1  # 팀 수 증가
+        count = 0  # 모험가 초기화
+print(result)
