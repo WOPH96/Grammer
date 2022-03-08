@@ -7,50 +7,22 @@
 
 # 많은 코드를 작성하고 많은 라이브러리를 사용해본다면 쉽게 풀 수 있음.
 
-# 상하좌우
-
 # Simulation 유형 / 완전 탐색 / 구현 유형
 
-# (1,1) 시작하여 (100,100)
-# R ==> (1,2) dy = 1 , L==> (1,0) dy = -1
-# U ==> (2,1)
+# 00시 00분 00초 부터 N시 59분 59초까지 3 세기
 
-n = int(input())
-
-x, y = 1, 1  # (1,1) 에서 시작
-
-# plans = str(input()) #문자열로 받을때 eg) RUDRLLRUD
-plans = input().split()  # 띄어쓰기로 받을 때(리스트) eg) R U D D L U
-
-# L, R, U, D에 따른 이동 방향
-dx = [0, 0, -1, 1]
-dy = [-1, 1, 0, 0]
-
-move_types = ['L', 'R', 'U', 'D']
-
-for plan in plans:
-    i = move_types.index(plan)
-    x += dx[i]
-    y += dy[i]
-
-    if(x < 1 or y < 1 or x > n or y > n):
-        x -= dx[i]
-        y -= dy[i]
+# 하루 =  86400초밖에 안됨. 24*60*60 = 86,400 = 3중포문 써도 Okay
+# 1초에 10,000,000 안으로만 구현 = 완전탐색 가능 = Brute Forcing
 
 
-print(f"({x},{y})")
+N = int(input())
 
-# 동빈나
+count = 0
 
-for plan in plans:
-    i = move_types.index(plan)
+for hour in range(N+1):
+    for min in range(60):
+        for sec in range(60):
+            if '3' in str(hour) + str(min) + str(sec):
+                count += 1
 
-    tx = x + dx[i]
-    ty = y + dy[i]
-    if(tx < 1 or ty < 1 or tx > n or ty > n):
-        continue
-
-    x += dx[i]
-    y += dy[i]
-
-print(f"({x},{y})")
+print(count)
