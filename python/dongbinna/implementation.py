@@ -9,20 +9,30 @@
 
 # Simulation 유형 / 완전 탐색 / 구현 유형
 
-# 00시 00분 00초 부터 N시 59분 59초까지 3 세기
+# 나이트가 갈 수 있는 경우의 수 구하기
 
-# 하루 =  86400초밖에 안됨. 24*60*60 = 86,400 = 3중포문 써도 Okay
-# 1초에 10,000,000 안으로만 구현 = 완전탐색 가능 = Brute Forcing
+# 기본값 a1
 
+# c3 기준 8 개
 
-N = int(input())
+init = str(input())
 
-count = 0
+x, y = ord(init[0])-ord('a'), ord(init[1])-ord('1')
 
-for hour in range(N+1):
-    for min in range(60):
-        for sec in range(60):
-            if '3' in str(hour) + str(min) + str(sec):
-                count += 1
+dx = [-2, -2, 2, 2, 1, -1, 1, -1]
+dy = [1, -1, 1, -1, -2, -2, 2, 2]
 
-print(count)
+cnt = 0
+
+print(x, y)
+
+for i in range(8):
+    tx = x - dx[i]
+    ty = y - dy[i]
+
+    if(tx < 0 or ty < 0 or tx > 7 or ty > 7):
+        continue
+
+    cnt += 1
+
+print(cnt)
