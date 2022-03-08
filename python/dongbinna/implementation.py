@@ -39,3 +39,18 @@ for plan in plans:
 
 
 print(f"({x},{y})")
+
+# 동빈나
+
+for plan in plans:
+    i = move_types.index(plan)
+
+    tx = x + dx[i]
+    ty = y + dy[i]
+    if(tx < 1 or ty < 1 or tx > n or ty > n):
+        continue
+
+    x += dx[i]
+    y += dy[i]
+
+print(f"({x},{y})")
