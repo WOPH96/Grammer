@@ -1,42 +1,53 @@
-#음료수 얼려 먹기 
+#미로 탈출 
+'''
+(1,1)에서 시작하여, (N,M)위치로 탈출
+0은 괴물이므로 피해서 가야함
+한번에 한칸씩 이동 가능
+'''
 
-#connected 어쩌고
+#BFS == 간선의 비용이 모두 같을 떄 최단거리를 탐색할 때 사용하는 
 
-# 첫 번째 줄에 얼음 틀의 세로 길이 N과 가로 길이 M이 주어진다. (1<=N, M<=1000)
-# 두 번째 줄부터 N+1번째 줄까지 얼음 틀의 형태가 주어진다.
-# 이때 구멍이 뚫려있는 부분은 0 그렇지 않은 부분은 1
+# 주변을 이동할 때마다 최단거리 증가
 
-# 0번과 연결된 모든 노드를 방문 => 방문 처리가 이뤄지는데에서만 카운트하기
+from collections import deque
 
-#동빈나 풀이 ㅜ
 
-def dfs(x,y):
-    if x <0 or x>=n or y<0  or y>=n :
-        return False
-    if graph[x][y] == 0 : # 연결된 지점들에 전부 방문처리
-        graph[x][y] =1 
+n,m = map(int,input().split())
 
-        dfs(x-1,y)
-        dfs(x,y-1)
-        dfs(x+1,y)
-        dfs(x,y+1)
-
-        return True
-    return False
-
-result =0 
-
-n, m = map(int,input().split())
-
-graph = []
+maze =[]
 
 for i in range(n):
-    graph.append(list(map(int,input())))
+    maze.append(list(map(int,input())))
 
-for i in range(n):
-    for j in range(m):
-        if(dfs(i,j)) == True:
-            result+=1
+#방향 벡터 정의
+dx = [-1,1,0,0]
+dy = [0,0,-1,1]
 
 
-print(result)
+#bfs
+x,y = 0,0
+q = deque()
+q.append((x,y))
+
+while q:
+    x,y = q.popleft()
+    for i in range(4):
+        tx = x + dx[i]
+        ty = y + dy[i]
+
+        if tx<0 or tx >=n or ty<0 or ty>=m:
+            continue
+
+        if maze[tx][ty] == 0:
+            continue
+
+        if maze[tx][ty] == 1 : # 해당 노드 처음 방문 시
+            maze[tx][ty] = maze[x][y]+1
+            q.append((tx,ty))
+print()
+for i in maze:
+    for j in i:
+        print(j,end=" ")
+    print()
+
+print("최단거리 : ",maze[n-1][m-1])
