@@ -1,18 +1,15 @@
-# 람다 표현식 예시
+#유클리드 호제법을 사용한 GCD 구하기
 
-array = [('홍길동', 50), ('이순신', 80), ('양원필', 75)]
 
-print(array)
+# A>B일 때 A를 B로 나눈 나머지 = R
+# A와 B의 최대공약수 = B와 R의 최대공약수
 
-print(sorted(array, key=lambda x: x[1]))
-print(array)
+def GCD(a,b):
+    
+    if(a%b==0):
+        return b
+    else:
+        return GCD(b,a%b)
 
-array.sort(reverse=True, key=lambda x: x[1])
-print(array)
 
-lst1 = [1, 2, 3, 4, 5]
-lst2 = [6, 7, 8, 9, 10]
-
-result = map(sum, lst1, lst2)  # 각각의 원소에 함수를 적용하고싶을 떄 map 사용
-
-print(list(result))
+print(GCD(192,162))
