@@ -1,17 +1,15 @@
-#유클리드 호제법을 사용한 GCD 구하기
+# 정렬이란 데이터를 특정한 기준에 나열하는 것
 
+# 선택 정렬 (selection sort)
 
-# A>B일 때 A를 B로 나눈 나머지 = R
-# A와 B의 최대공약수 = B와 R의 최대공약수
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
-#재귀함수는 점화식에서도 유용하게 사용 가능
+for i in range(len(array)):
+    min_idx = i
+    for j in range(i+1, len(array)):
+        if array[j] < array[min_idx]:
+            min_idx = j
 
-def GCD(a,b):
-    
-    if(a%b==0):
-        return b
-    else:
-        return GCD(b,a%b)
+    array[i], array[min_idx] = array[min_idx], array[i]
 
-
-print(GCD(192,162))
+print(array)
