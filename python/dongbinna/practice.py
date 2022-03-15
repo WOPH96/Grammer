@@ -5,25 +5,22 @@
 # 다이나믹 프로그래밍 사용
 # DP table을 이용한다
 
-# 탑다운
+# 바텀업
 
 
 def fibo(x):
 
-    if x<=2:
-        DP[x]=1
-        return 1
-    
-    if DP[x] != 0 :
-        return DP[x]
+    DP = [0]*(n+1)
 
-    DP[x] = fibo(x-1)+fibo(x-2)
+    DP[1] = 1
+    DP[2] = 1
+
+    for i in range(3,x+1):
+        DP[i] = DP[i-1] + DP[i-2]
 
     return DP[x]
-
 n = int(input())
 
-DP = [0]*(n+1)
 
 print(fibo(n))
  
