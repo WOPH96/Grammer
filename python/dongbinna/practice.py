@@ -1,20 +1,33 @@
-#개미전사
+# 1로 만들기
 
-#창고를 하나건너 하나만 털 수 있음
+# 5,3,2로 나누어떨어지면 각각으로 나눔
+# 1을 뺌
 
-#각 창고마다 최적해 구하기
+#연산 4개를 사용하여 값을 1로 만들기
+#최소 연산 횟수 구하기
 
-# Ai = Max(Ai-1,Ai-2 + i)
+#     f(30)
+# f(6)    f(10)   f(15)
 
-food = [1,3,1,5]
 
+# d[1] = 0
+# d[2] = d[1]+1
+# d[3] = d[2] or d[3//3] +1
+# d[4] = (d[3] or d[4//2])+1
 
-DP=[0]*len(food)
+d=  [0]*30001 # d[n] 은 n이 1이 되는 최적해
 
-DP[0] = food[0]
-DP[1] = max(food[0],food[1])
+n = int(input())
 
-for i in range(2,len(food)):
-    DP[i] = max(DP[i-1],DP[i-2]+food[i])
+for i in range(2,n+1):
+    d[i] = d[i-1]+1
 
-print(DP[len(food)-1])
+    if(i%2==0):
+        d[i] = min(d[i],d[i//2]+1)
+    if(i%3==0):
+        d[i] = min(d[i],d[i//3]+1)
+    if(i%5==0):
+        d[i] = min(d[i],d[i//5]+1)
+
+print(d[n])
+
