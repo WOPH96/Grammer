@@ -1,26 +1,20 @@
-#피보나치 수열
+#개미전사
 
-# 1 1 2 3 5 8 13 21 ...
+#창고를 하나건너 하나만 털 수 있음
 
-# 다이나믹 프로그래밍 사용
-# DP table을 이용한다
+#각 창고마다 최적해 구하기
 
-# 바텀업
+# Ai = Max(Ai-1,Ai-2 + i)
 
-
-def fibo(x):
-
-    DP = [0]*(n+1)
-
-    DP[1] = 1
-    DP[2] = 1
-
-    for i in range(3,x+1):
-        DP[i] = DP[i-1] + DP[i-2]
-
-    return DP[x]
-n = int(input())
+food = [1,3,1,5]
 
 
-print(fibo(n))
- 
+DP=[0]*len(food)
+
+DP[0] = food[0]
+DP[1] = max(food[0],food[1])
+
+for i in range(2,len(food)):
+    DP[i] = max(DP[i-1],DP[i-2]+food[i])
+
+print(DP[len(food)-1])
