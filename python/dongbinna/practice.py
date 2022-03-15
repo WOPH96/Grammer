@@ -1,33 +1,44 @@
-# 1로 만들기
+#효율적인 화폐 구성
 
-# 5,3,2로 나누어떨어지면 각각으로 나눔
-# 1을 뺌
+#많은 걸 최대한 많이 사용..하면 안되나?
 
-#연산 4개를 사용하여 값을 1로 만들기
-#최소 연산 횟수 구하기
+#16원 => 3*4 + 2*2 = 6개
 
-#     f(30)
-# f(6)    f(10)   f(15)
+#   16원
+#  각 금액별로 최소화폐를 적는다
+# d[i] = i원을 만들기 위한 최소화폐
+# d[1] = 10000
+# d[2] = 1
+# d[3] = 1
+# d[4] = d[2]+d[2] =2
+# d[5] = d[3]+d[2] =2
+# d[6] = min(d[4]+d[2],d[3]+d[3])
+# d[7] = min(d[3]+d[7-3],d[2]+d[7-4])
+# d[i] = min(d[M]+d[i-M],...,d[m]+d[i-m])
+# --> min보다는 M으로 했을때 되길 바라보자
 
 
-# d[1] = 0
-# d[2] = d[1]+1
-# d[3] = d[2] or d[3//3] +1
-# d[4] = (d[3] or d[4//2])+1
+n,m = map(int,input().split())
 
-d=  [0]*30001 # d[n] 은 n이 1이 되는 최적해
+coins =[]
+for _ in range(n):
+    coins.append(int(input()))
 
-n = int(input())
+d = [10000]* 101
 
-for i in range(2,n+1):
-    d[i] = d[i-1]+1
+coins.sort(reverse=True)
 
-    if(i%2==0):
-        d[i] = min(d[i],d[i//2]+1) #1을 뺀 연산과 2를 나눈 연산중에 뭐가 더 적은 횟수?
-    if(i%3==0):
-        d[i] = min(d[i],d[i//3]+1)
-    if(i%5==0):
-        d[i] = min(d[i],d[i//5]+1)
+for coin in coins:
+    d[coin] = 1
 
-print(d[n])
+
+for i in range(max(coins)+1,m+1):
+    for coin in coins: # 큰값부터 체크
+        d[i] = d[coin]+d[i-coin] # 
+        if d[i] < 10000: break # 제대로 개수 취한거
+
+if d[m]>=10000:
+    d[m] = -1
+
+print("최소화폐개수 = ",d[m])
 
