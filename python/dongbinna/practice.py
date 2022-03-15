@@ -1,17 +1,17 @@
-#유클리드 호제법을 사용한 GCD 구하기
+#피보나치 수열
 
+# 1 1 2 3 5 8 13 21 ...
 
-# A>B일 때 A를 B로 나눈 나머지 = R
-# A와 B의 최대공약수 = B와 R의 최대공약수
+# 일반적인 피보나치 수열, 계산한 결과도 다시 계산하여 사용
 
-#재귀함수는 점화식에서도 유용하게 사용 가능
+#fibo(40) 시 소요시간 : 24s
 
-def GCD(a,b):
+def fibo(x):
+
+    if x<=2:
+        return 1
     
-    if(a%b==0):
-        return b
-    else:
-        return GCD(b,a%b)
+    return fibo(x-1)+fibo(x-2)
 
-
-print(GCD(192,162))
+print(fibo(40))
+ 
