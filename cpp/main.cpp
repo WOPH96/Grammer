@@ -5,25 +5,46 @@
 
 using namespace std;
 
-//정수 변환, stoi
+// find 함수 테스트
 
+template <typename T>
+void printvec(vector<T> v)
+{
+    for (auto it = v.begin(); it != v.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
 int main()
 {
-    string str_dec = "2021,abc";
-    string str_hex = "40c3";
-    string str_bin = "-10101011";
-    string str_auto = "0x14";
 
-    string::size_type sz;
+    int arr[] = {235, 36, 2, 3, 23, 52, 51, 5, 1, 3, 6, 3};
 
-    int i_dec = stoi(str_dec, &sz);
-    int i_hex = stoi(str_hex, nullptr, 16);
-    int i_bin = stoi(str_bin, nullptr, 2);
-    int i_auto = stoi(str_auto, nullptr, 0);
+    vector<int> v(arr, arr + sizeof(arr) / sizeof(arr[0]));
+    printvec(v);
 
-    cout << "i_dec : " << i_dec << str_dec.substr(sz) << endl;
-    cout << "i_hex : " << i_hex << endl;
-    cout << "i_bin : " << i_bin << endl;
-    cout << "i_auto : " << i_auto << endl;
+    sort(v.begin(), v.end());
+    printvec(v);
+
+    reverse(v.begin(), v.end());
+    printvec(v);
+
+    auto itr = find(v.begin(), v.end(), 36);
+
+    if (itr != v.end()) // find!
+        cout << distance(v.begin(), itr) << endl;
+    else
+        cout << "no found " << endl;
+
+    auto itr2 = find_if(v.begin(), v.end(), [](int n)
+                        { return n % 2 == 1; });
+    while (itr2 != v.end())
+    {
+        cout << *itr2 << " is at v[" << distance(v.begin(), itr2) << "]" << endl;
+        itr2 = find_if(itr2 + 1, v.end(), [](int n)
+                       { return n % 2 == 1; });
+    }
+
     return 0;
 }
