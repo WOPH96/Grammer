@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 template <typename Iter>
 void print(Iter begin, Iter end)
 {
@@ -17,20 +19,5 @@ void print(Iter begin, Iter end)
 int main()
 {
     std::vector<int> vec;
-    vec.push_back(5);
-    vec.push_back(3);
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
-    vec.push_back(4);
-
-    std::cout << "처음 vec 상태 ------" << std::endl;
-    print(vec.begin(), vec.end());
-
-    std::cout << "벡터에서 홀수인 원소 제거 ---" << std::endl;
-    vec.erase(std::remove_if(vec.begin(), vec.end(),
-                             [](int i)
-                             { return i % 2 == 1; })),
-        vec.end();
-    print(vec.begin(), vec.end());
+    cout << "hello" << endl;
 }
