@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "learn",
+					"name" : "practice",
 					"targetIndexes" : 
 					[
 						0,
@@ -290,9 +290,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "learn::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-learn-Debug-9d5870d87d9326d93b62.json",
-					"name" : "learn",
+					"id" : "practice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practice-Debug-af81b7875746f5462a65.json",
+					"name" : "practice",
 					"projectIndex" : 0
 				}
 			]
@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/build",
-		"source" : "/Users/yang-wonphil/Desktop/study/grammer/cpp"
+		"build" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp/build",
+		"source" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp"
 	},
 	"version" : 
 	{

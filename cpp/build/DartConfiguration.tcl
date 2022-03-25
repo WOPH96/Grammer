@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/yang-wonphil/Desktop/study/grammer/cpp
-BuildDirectory: /Users/yang-wonphil/Desktop/study/grammer/cpp/build
+SourceDirectory: /Users/yang-wonphil/Desktop/study/Grammer/cpp
+BuildDirectory: /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.22.2/bin/cmake" "/Users/yang-wonphil/Desktop/study/grammer/cpp"
+ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.22.2/bin/cmake" "/Users/yang-wonphil/Desktop/study/Grammer/cpp"
 MakeCommand: /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -63,7 +63,7 @@ UpdateType:
 
 # Compiler info
 Compiler: /usr/bin/clang++
-CompilerVersion: 13.0.0.13000029
+CompilerVersion: 13.1.6.13160021
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

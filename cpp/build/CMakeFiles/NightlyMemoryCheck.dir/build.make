@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp/build
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
 
 # Utility rule file for NightlyMemoryCheck.
 
@@ -82,6 +82,6 @@ CMakeFiles/NightlyMemoryCheck.dir/clean:
 .PHONY : CMakeFiles/NightlyMemoryCheck.dir/clean
 
 CMakeFiles/NightlyMemoryCheck.dir/depend:
-	cd /Users/yang-wonphil/Desktop/study/grammer/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yang-wonphil/Desktop/study/grammer/cpp /Users/yang-wonphil/Desktop/study/grammer/cpp /Users/yang-wonphil/Desktop/study/grammer/cpp/build /Users/yang-wonphil/Desktop/study/grammer/cpp/build /Users/yang-wonphil/Desktop/study/grammer/cpp/build/CMakeFiles/NightlyMemoryCheck.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/yang-wonphil/Desktop/study/Grammer/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yang-wonphil/Desktop/study/Grammer/cpp /Users/yang-wonphil/Desktop/study/Grammer/cpp /Users/yang-wonphil/Desktop/study/Grammer/cpp/build /Users/yang-wonphil/Desktop/study/Grammer/cpp/build /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles/NightlyMemoryCheck.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyMemoryCheck.dir/depend
 

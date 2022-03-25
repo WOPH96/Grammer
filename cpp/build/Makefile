@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/grammer/cpp/build
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/opt/homebrew/Cellar/cmake/3.22.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/yang-wonphil/Desktop/study/grammer/cpp/build/CPackSourceConfig.cmake
+	/opt/homebrew/Cellar/cmake/3.22.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/grammer/cpp/build/CMakeFiles /Users/yang-wonphil/Desktop/study/grammer/cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles /Users/yang-wonphil/Desktop/study/Grammer/cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/grammer/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -511,24 +511,24 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named learn
+# Target rules for targets named practice
 
 # Build rule for target.
-learn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learn
-.PHONY : learn
+practice: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice
+.PHONY : practice
 
 # fast build rule for target.
-learn/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/build
-.PHONY : learn/fast
+practice/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
+.PHONY : practice/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -536,7 +536,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -544,7 +544,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -586,7 +586,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... learn"
+	@echo "... practice"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

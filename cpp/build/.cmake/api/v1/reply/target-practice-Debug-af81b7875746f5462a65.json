@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "learn"
+			"path" : "practice"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk"
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
 				}
 			],
 			"language" : "CXX",
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "learn::@6890427a1f51a3e7e1df",
+	"id" : "practice::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "learn",
-	"nameOnDisk" : "learn",
+	"name" : "practice",
+	"nameOnDisk" : "practice",
 	"paths" : 
 	{
 		"build" : ".",

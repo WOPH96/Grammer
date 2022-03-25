@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/build"
+			"value" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp"
+			"value" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -807,7 +807,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "learn"
+			"value" : "practice"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1758,7 +1758,7 @@
 			"value" : ""
 		},
 		{
-			"name" : "learn_BINARY_DIR",
+			"name" : "practice_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1767,10 +1767,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp/build"
+			"value" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp/build"
 		},
 		{
-			"name" : "learn_IS_TOP_LEVEL",
+			"name" : "practice_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1782,7 +1782,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "learn_SOURCE_DIR",
+			"name" : "practice_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1791,7 +1791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/yang-wonphil/Desktop/study/grammer/cpp"
+			"value" : "/Users/yang-wonphil/Desktop/study/Grammer/cpp"
 		}
 	],
 	"kind" : "cache",
