@@ -7,9 +7,7 @@ using namespace std;
 
 int main()
 {
-    std::vector<int> vec;
-    cout << "hello" << endl;
-    string a;
-    cin >> a;
-    cout << stoi(a, nullptr, 16) << endl;
+    std::vector<int> a;
+
+    // cout << vec[0].push_back(3) << endl;
 }
