@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build
+=======
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,7 +99,11 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+<<<<<<< HEAD
 	/usr/bin/cpack --config ./CPackSourceConfig.cmake /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CPackSourceConfig.cmake
+=======
+	/opt/homebrew/Cellar/cmake/3.22.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CPackSourceConfig.cmake
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -113,9 +124,15 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles /Users/yang-wonphil/Desktop/study/Grammer/cpp/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : all
 
 # The main clean target
@@ -508,6 +525,7 @@ ContinuousUpdate/fast:
 .PHONY : ContinuousUpdate/fast
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named ExperimentalBuild
 
 # Build rule for target.
@@ -519,6 +537,19 @@ ExperimentalBuild: cmake_check_build_system
 ExperimentalBuild/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
+=======
+# Target rules for targets named practice
+
+# Build rule for target.
+practice: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice
+.PHONY : practice
+
+# fast build rule for target.
+practice/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
+.PHONY : practice/fast
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 main.o: main.cpp.o
 
@@ -526,7 +557,11 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.o
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.o
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -535,7 +570,11 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.i
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.i
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -544,7 +583,11 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.s
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.s
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : main.cpp.s
 
 # Help Target
@@ -580,6 +623,7 @@ help:
 	@echo "... NightlyMemCheck"
 	@echo "... ContinuousStart"
 	@echo "... NightlySubmit"
+<<<<<<< HEAD
 	@echo "... ContinuousCoverage"
 	@echo "... Nightly"
 	@echo "... NightlyConfigure"
@@ -587,6 +631,11 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousUpdate"
 	@echo "... ExperimentalBuild"
+=======
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
+	@echo "... practice"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

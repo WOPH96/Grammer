@@ -54,10 +54,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build
+=======
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 #=============================================================================
 # Target rules for target CMakeFiles/practice.dir
@@ -72,6 +79,11 @@ CMakeFiles/practice.dir/all:
 # Include target in all.
 all: CMakeFiles/practice.dir/all
 
+<<<<<<< HEAD
+=======
+# The main recursive "all" target.
+all: CMakeFiles/practice.dir/all
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : all
 
 # Build rule for subdir invocation for target.
@@ -125,13 +137,18 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ContinuousSubmit.dir/clean
+<<<<<<< HEAD
 
+=======
+clean: CMakeFiles/practice.dir/clean
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ContinuousMemCheck.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousMemCheck.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
@@ -144,6 +161,20 @@ CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousMemCheck.dir/rule
+=======
+CMakeFiles/Experimental.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target Experimental"
+.PHONY : CMakeFiles/Experimental.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Experimental.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Experimental.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/Experimental.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousMemCheck: CMakeFiles/ContinuousMemCheck.dir/rule
@@ -164,6 +195,7 @@ clean: CMakeFiles/ContinuousMemCheck.dir/clean
 # Target rules for target CMakeFiles/ContinuousConfigure.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousConfigure.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
@@ -176,6 +208,20 @@ CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousConfigure.dir/rule
+=======
+CMakeFiles/Nightly.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target Nightly"
+.PHONY : CMakeFiles/Nightly.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Nightly.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Nightly.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/Nightly.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousConfigure: CMakeFiles/ContinuousConfigure.dir/rule
@@ -196,6 +242,7 @@ clean: CMakeFiles/ContinuousConfigure.dir/clean
 # Target rules for target CMakeFiles/ExperimentalSubmit.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ExperimentalSubmit.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
@@ -208,6 +255,20 @@ CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalSubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/rule
+=======
+CMakeFiles/Continuous.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target Continuous"
+.PHONY : CMakeFiles/Continuous.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Continuous.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Continuous.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/Continuous.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ExperimentalSubmit: CMakeFiles/ExperimentalSubmit.dir/rule
@@ -228,6 +289,7 @@ clean: CMakeFiles/ExperimentalSubmit.dir/clean
 # Target rules for target CMakeFiles/ExperimentalMemCheck.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ExperimentalMemCheck.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
@@ -240,6 +302,20 @@ CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ExperimentalMemCheck.dir/rule
+=======
+CMakeFiles/NightlyMemoryCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemoryCheck.dir/build.make CMakeFiles/NightlyMemoryCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemoryCheck.dir/build.make CMakeFiles/NightlyMemoryCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
+.PHONY : CMakeFiles/NightlyMemoryCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyMemoryCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyMemoryCheck.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ExperimentalMemCheck: CMakeFiles/ExperimentalMemCheck.dir/rule
@@ -260,6 +336,7 @@ clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 # Target rules for target CMakeFiles/ExperimentalTest.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ExperimentalTest.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
@@ -272,6 +349,20 @@ CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ExperimentalTest.dir/rule
+=======
+CMakeFiles/NightlyStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyStart"
+.PHONY : CMakeFiles/NightlyStart.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyStart.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyStart.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ExperimentalTest: CMakeFiles/ExperimentalTest.dir/rule
@@ -293,16 +384,28 @@ clean: CMakeFiles/ExperimentalTest.dir/clean
 
 # All Build rule for target.
 CMakeFiles/NightlyUpdate.dir/all:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -324,6 +427,7 @@ clean: CMakeFiles/NightlyUpdate.dir/clean
 # Target rules for target CMakeFiles/NightlyStart.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlyStart.dir/all:
 	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
@@ -336,6 +440,20 @@ CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlyStart.dir/rule
+=======
+CMakeFiles/NightlyConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
+.PHONY : CMakeFiles/NightlyConfigure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyConfigure.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlyStart: CMakeFiles/NightlyStart.dir/rule
@@ -389,16 +507,28 @@ clean: CMakeFiles/NightlyMemoryCheck.dir/clean
 
 # All Build rule for target.
 CMakeFiles/NightlyBuild.dir/all:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyBuild"
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyBuild"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyBuild.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -411,6 +541,30 @@ CMakeFiles/NightlyBuild.dir/clean:
 	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/clean
 .PHONY : CMakeFiles/NightlyBuild.dir/clean
 
+<<<<<<< HEAD
+=======
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyTest.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyTest"
+.PHONY : CMakeFiles/NightlyTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyTest.dir/rule
+
+# Convenience name for target.
+NightlyTest: CMakeFiles/NightlyTest.dir/rule
+.PHONY : NightlyTest
+
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 # clean rule for target.
 clean: CMakeFiles/NightlyBuild.dir/clean
 
@@ -420,6 +574,7 @@ clean: CMakeFiles/NightlyBuild.dir/clean
 # Target rules for target CMakeFiles/ExperimentalUpdate.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ExperimentalUpdate.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentalUpdate.dir/build.make CMakeFiles/ExperimentalUpdate.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalUpdate.dir/build.make CMakeFiles/ExperimentalUpdate.dir/build
@@ -437,6 +592,46 @@ CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
 ExperimentalUpdate: CMakeFiles/ExperimentalUpdate.dir/rule
 
 .PHONY : ExperimentalUpdate
+=======
+CMakeFiles/NightlyCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
+.PHONY : CMakeFiles/NightlyCoverage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyCoverage.dir/rule
+
+# Convenience name for target.
+NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : NightlyCoverage
+
+# clean rule for target.
+CMakeFiles/NightlyCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/clean
+.PHONY : CMakeFiles/NightlyCoverage.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyMemCheck.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlyMemCheck"
+.PHONY : CMakeFiles/NightlyMemCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyMemCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyMemCheck.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # clean rule for target.
 CMakeFiles/ExperimentalUpdate.dir/clean:
@@ -452,6 +647,7 @@ clean: CMakeFiles/ExperimentalUpdate.dir/clean
 # Target rules for target CMakeFiles/ContinuousBuild.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousBuild.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousBuild.dir/build.make CMakeFiles/ContinuousBuild.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousBuild.dir/build.make CMakeFiles/ContinuousBuild.dir/build
@@ -464,6 +660,20 @@ CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousBuild.dir/rule
+=======
+CMakeFiles/NightlySubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target NightlySubmit"
+.PHONY : CMakeFiles/NightlySubmit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlySubmit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlySubmit.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousBuild: CMakeFiles/ContinuousBuild.dir/rule
@@ -484,6 +694,7 @@ clean: CMakeFiles/ContinuousBuild.dir/clean
 # Target rules for target CMakeFiles/Continuous.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/Continuous.dir/all:
 	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/depend
 	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
@@ -496,6 +707,20 @@ CMakeFiles/Continuous.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Continuous.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/Continuous.dir/rule
+=======
+CMakeFiles/ExperimentalStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
+.PHONY : CMakeFiles/ExperimentalStart.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalStart.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalStart.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 Continuous: CMakeFiles/Continuous.dir/rule
@@ -516,6 +741,7 @@ clean: CMakeFiles/Continuous.dir/clean
 # Target rules for target CMakeFiles/Experimental.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/Experimental.dir/all:
 	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/depend
 	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
@@ -528,6 +754,20 @@ CMakeFiles/Experimental.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Experimental.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/Experimental.dir/rule
+=======
+CMakeFiles/ExperimentalUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalUpdate.dir/build.make CMakeFiles/ExperimentalUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalUpdate.dir/build.make CMakeFiles/ExperimentalUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
+.PHONY : CMakeFiles/ExperimentalUpdate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalUpdate.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 Experimental: CMakeFiles/Experimental.dir/rule
@@ -549,16 +789,28 @@ clean: CMakeFiles/Experimental.dir/clean
 
 # All Build rule for target.
 CMakeFiles/ExperimentalConfigure.dir/all:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -580,6 +832,7 @@ clean: CMakeFiles/ExperimentalConfigure.dir/clean
 # Target rules for target CMakeFiles/NightlyTest.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlyTest.dir/all:
 	$(MAKE) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/build
@@ -592,6 +845,20 @@ CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlyTest.dir/rule
+=======
+CMakeFiles/ExperimentalBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalBuild"
+.PHONY : CMakeFiles/ExperimentalBuild.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalBuild.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalBuild.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlyTest: CMakeFiles/NightlyTest.dir/rule
@@ -612,6 +879,7 @@ clean: CMakeFiles/NightlyTest.dir/clean
 # Target rules for target CMakeFiles/NightlyCoverage.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlyCoverage.dir/all:
 	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
@@ -624,6 +892,20 @@ CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlyCoverage.dir/rule
+=======
+CMakeFiles/ExperimentalTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
+.PHONY : CMakeFiles/ExperimentalTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalTest.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
@@ -645,16 +927,28 @@ clean: CMakeFiles/NightlyCoverage.dir/clean
 
 # All Build rule for target.
 CMakeFiles/ExperimentalCoverage.dir/all:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/ExperimentalCoverage.dir/build.make CMakeFiles/ExperimentalCoverage.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalCoverage.dir/build.make CMakeFiles/ExperimentalCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalCoverage.dir/build.make CMakeFiles/ExperimentalCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalCoverage.dir/build.make CMakeFiles/ExperimentalCoverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalCoverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -667,6 +961,30 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 	$(MAKE) -f CMakeFiles/ExperimentalCoverage.dir/build.make CMakeFiles/ExperimentalCoverage.dir/clean
 .PHONY : CMakeFiles/ExperimentalCoverage.dir/clean
 
+<<<<<<< HEAD
+=======
+#=============================================================================
+# Target rules for target CMakeFiles/ExperimentalMemCheck.dir
+
+# All Build rule for target.
+CMakeFiles/ExperimentalMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
+.PHONY : CMakeFiles/ExperimentalMemCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalMemCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalMemCheck.dir/rule
+
+# Convenience name for target.
+ExperimentalMemCheck: CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : ExperimentalMemCheck
+
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 # clean rule for target.
 clean: CMakeFiles/ExperimentalCoverage.dir/clean
 
@@ -676,6 +994,7 @@ clean: CMakeFiles/ExperimentalCoverage.dir/clean
 # Target rules for target CMakeFiles/NightlyMemCheck.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlyMemCheck.dir/all:
 	$(MAKE) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/build
@@ -688,6 +1007,20 @@ CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlyMemCheck.dir/rule
+=======
+CMakeFiles/ExperimentalSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
+.PHONY : CMakeFiles/ExperimentalSubmit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalSubmit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalSubmit.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlyMemCheck: CMakeFiles/NightlyMemCheck.dir/rule
@@ -709,16 +1042,28 @@ clean: CMakeFiles/NightlyMemCheck.dir/clean
 
 # All Build rule for target.
 CMakeFiles/ContinuousStart.dir/all:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousStart"
+=======
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousStart"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousStart.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -740,6 +1085,7 @@ clean: CMakeFiles/ContinuousStart.dir/clean
 # Target rules for target CMakeFiles/NightlySubmit.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlySubmit.dir/all:
 	$(MAKE) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/depend
 	$(MAKE) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/build
@@ -752,6 +1098,20 @@ CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlySubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlySubmit.dir/rule
+=======
+CMakeFiles/ContinuousUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
+.PHONY : CMakeFiles/ContinuousUpdate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousUpdate.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlySubmit: CMakeFiles/NightlySubmit.dir/rule
@@ -772,6 +1132,7 @@ clean: CMakeFiles/NightlySubmit.dir/clean
 # Target rules for target CMakeFiles/ContinuousCoverage.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousCoverage.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
@@ -784,6 +1145,20 @@ CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousCoverage.dir/rule
+=======
+CMakeFiles/ContinuousConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousConfigure"
+.PHONY : CMakeFiles/ContinuousConfigure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousConfigure.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousCoverage: CMakeFiles/ContinuousCoverage.dir/rule
@@ -804,6 +1179,7 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 # Target rules for target CMakeFiles/Nightly.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/Nightly.dir/all:
 	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/depend
 	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
@@ -816,6 +1192,20 @@ CMakeFiles/Nightly.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Nightly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/Nightly.dir/rule
+=======
+CMakeFiles/ContinuousBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousBuild.dir/build.make CMakeFiles/ContinuousBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousBuild.dir/build.make CMakeFiles/ContinuousBuild.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousBuild"
+.PHONY : CMakeFiles/ContinuousBuild.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousBuild.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousBuild.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 Nightly: CMakeFiles/Nightly.dir/rule
@@ -836,6 +1226,7 @@ clean: CMakeFiles/Nightly.dir/clean
 # Target rules for target CMakeFiles/NightlyConfigure.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/NightlyConfigure.dir/all:
 	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/depend
 	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
@@ -848,6 +1239,20 @@ CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/NightlyConfigure.dir/rule
+=======
+CMakeFiles/ContinuousTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousTest.dir/build.make CMakeFiles/ContinuousTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousTest.dir/build.make CMakeFiles/ContinuousTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousTest"
+.PHONY : CMakeFiles/ContinuousTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousTest.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 NightlyConfigure: CMakeFiles/NightlyConfigure.dir/rule
@@ -868,6 +1273,7 @@ clean: CMakeFiles/NightlyConfigure.dir/clean
 # Target rules for target CMakeFiles/ExperimentalStart.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ExperimentalStart.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
@@ -880,6 +1286,20 @@ CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ExperimentalStart.dir/rule
+=======
+CMakeFiles/ContinuousCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousCoverage"
+.PHONY : CMakeFiles/ContinuousCoverage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousCoverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousCoverage.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ExperimentalStart: CMakeFiles/ExperimentalStart.dir/rule
@@ -900,6 +1320,7 @@ clean: CMakeFiles/ExperimentalStart.dir/clean
 # Target rules for target CMakeFiles/ContinuousTest.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousTest.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousTest.dir/build.make CMakeFiles/ContinuousTest.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousTest.dir/build.make CMakeFiles/ContinuousTest.dir/build
@@ -912,6 +1333,20 @@ CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousTest.dir/rule
+=======
+CMakeFiles/ContinuousMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
+.PHONY : CMakeFiles/ContinuousMemCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousMemCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousMemCheck.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousTest: CMakeFiles/ContinuousTest.dir/rule
@@ -932,6 +1367,7 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 # Target rules for target CMakeFiles/ContinuousUpdate.dir
 
 # All Build rule for target.
+<<<<<<< HEAD
 CMakeFiles/ContinuousUpdate.dir/all:
 	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
 	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
@@ -944,6 +1380,20 @@ CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/ContinuousUpdate.dir/rule
+=======
+CMakeFiles/ContinuousSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num= "Built target ContinuousSubmit"
+.PHONY : CMakeFiles/ContinuousSubmit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousSubmit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousSubmit.dir/rule
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Convenience name for target.
 ContinuousUpdate: CMakeFiles/ContinuousUpdate.dir/rule
@@ -961,6 +1411,7 @@ clean: CMakeFiles/ContinuousUpdate.dir/clean
 .PHONY : clean
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for target CMakeFiles/ExperimentalBuild.dir
 
 # All Build rule for target.
@@ -991,6 +1442,32 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 clean: CMakeFiles/ExperimentalBuild.dir/clean
 
 .PHONY : clean
+=======
+# Target rules for target CMakeFiles/practice.dir
+
+# All Build rule for target.
+CMakeFiles/practice.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles --progress-num=1,2 "Built target practice"
+.PHONY : CMakeFiles/practice.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/practice.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/practice.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/practice.dir/rule
+
+# Convenience name for target.
+practice: CMakeFiles/practice.dir/rule
+.PHONY : practice
+
+# clean rule for target.
+CMakeFiles/practice.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean
+.PHONY : CMakeFiles/practice.dir/clean
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 #=============================================================================
 # Special targets to cleanup operation of make.

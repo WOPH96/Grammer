@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build
+=======
+CMAKE_SOURCE_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Utility rule file for Nightly.
 
@@ -71,6 +78,10 @@ CMakeFiles/Nightly.dir/clean:
 .PHONY : CMakeFiles/Nightly.dir/clean
 
 CMakeFiles/Nightly.dir/depend:
+<<<<<<< HEAD
 	cd /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ywonp/Documents/study/grammer/cpp /mnt/c/Users/ywonp/Documents/study/grammer/cpp /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/CMakeFiles/Nightly.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /Users/yang-wonphil/Desktop/study/Grammer/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yang-wonphil/Desktop/study/Grammer/cpp /Users/yang-wonphil/Desktop/study/Grammer/cpp /Users/yang-wonphil/Desktop/study/Grammer/cpp/build /Users/yang-wonphil/Desktop/study/Grammer/cpp/build /Users/yang-wonphil/Desktop/study/Grammer/cpp/build/CMakeFiles/Nightly.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 .PHONY : CMakeFiles/Nightly.dir/depend
 

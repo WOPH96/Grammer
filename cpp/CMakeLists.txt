@@ -6,6 +6,8 @@ enable_testing()
 
 add_executable(practice main.cpp)
 
+set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+
 include(CPack)

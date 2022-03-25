@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /mnt/c/Users/ywonp/Documents/study/grammer/cpp
+=======
+# Install script for directory: /Users/yang-wonphil/Desktop/study/Grammer/cpp
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/mnt/c/Users/ywonp/Documents/study/grammer/cpp/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/Users/yang-wonphil/Desktop/study/Grammer/cpp/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

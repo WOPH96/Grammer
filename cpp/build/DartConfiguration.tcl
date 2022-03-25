@@ -4,8 +4,13 @@
 
 
 # Configuration directories and files
+<<<<<<< HEAD
 SourceDirectory: /mnt/c/Users/ywonp/Documents/study/grammer/cpp
 BuildDirectory: /mnt/c/Users/ywonp/Documents/study/grammer/cpp/build
+=======
+SourceDirectory: /Users/yang-wonphil/Desktop/study/Grammer/cpp
+BuildDirectory: /Users/yang-wonphil/Desktop/study/Grammer/cpp/build
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Where to place the cost data store
 CostDataFile: 
@@ -36,8 +41,13 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
+<<<<<<< HEAD
 ConfigureCommand: "/usr/bin/cmake" "/mnt/c/Users/ywonp/Documents/study/grammer/cpp"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+=======
+ConfigureCommand: "/opt/homebrew/Cellar/cmake/3.22.2/bin/cmake" "/Users/yang-wonphil/Desktop/study/Grammer/cpp"
+MakeCommand: /opt/homebrew/Cellar/cmake/3.22.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -72,8 +82,13 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
+<<<<<<< HEAD
 Compiler: /usr/bin/x86_64-linux-gnu-g++-7
 CompilerVersion: 7.5.0
+=======
+Compiler: /usr/bin/clang++
+CompilerVersion: 13.1.6.13160021
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

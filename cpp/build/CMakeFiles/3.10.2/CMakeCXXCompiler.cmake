@@ -1,7 +1,12 @@
 set(CMAKE_CXX_COMPILER "/usr/bin/x86_64-linux-gnu-g++-7")
 set(CMAKE_CXX_COMPILER_ARG1 "")
+<<<<<<< HEAD:cpp/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "7.5.0")
+=======
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_VERSION "13.1.6.13160021")
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766:cpp/build/CMakeFiles/3.22.2/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")
@@ -70,6 +75,13 @@ endif()
 
 
 
+<<<<<<< HEAD:cpp/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+=======
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks")
+>>>>>>> 2e240878808e7e91ef91553eeab27445953b4766:cpp/build/CMakeFiles/3.22.2/CMakeCXXCompiler.cmake
