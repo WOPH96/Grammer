@@ -15,7 +15,9 @@
       "options": {
         "cwd": "${fileDirname}"
       },
-      "problemMatcher": ["$gcc"],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": "build",
       "detail": "컴파일러: /usr/bin/cpp"
     }
