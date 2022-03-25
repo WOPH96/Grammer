@@ -9,4 +9,7 @@ int main()
 {
     std::vector<int> vec;
     cout << "hello" << endl;
+    string a;
+    cin >> a;
+    cout << stoi(a, nullptr, 16) << endl;
 }
