@@ -32,7 +32,10 @@ int main()
     sort(a.begin(), a.end());
     printv(a);
     sort(a.begin(), a.end(), [](pair<int, int> p1, pair<int, int> p2)
-         { return p1.second > p2.second; });
+         {  
+             if (p1.first != p2.first)
+                return p1.first > p2.first;
+             return p1.second < p2.second; });
     printv(a);
     // cout << vec[0].push_back(3) << endl;
 }
